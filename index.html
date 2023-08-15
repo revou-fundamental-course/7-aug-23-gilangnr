@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KATIK</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>KATIK</h1>
+        <ul>
+          <li><a href="#">Segitiga</a></li>
+          <li><a href="#" onclick="window.location.href='jargen.html'">Jajar Genjang</a></li>
+        </ul>
+      </nav>
+      <section class="jumbotron" id="home">
+        <div class="judul">
+          <h1>Welcome to KATIK</h1>
+          <p>Hai Sobat, Selamat Datang di KATIK</p>
+          <p>
+            Sebuah web apps sederhana yang berfungsi untuk <br />
+            menghitung luas dan keliling bangun datar
+          </p>
+          <a href="#segitiga"><button>Coba Sekarang</button></a>
+        </div>
+        <img src="assets/hero.png" alt="hero" />
+      </section>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#115173"
+        fill-opacity="1"
+        d="M0,32L40,32C80,32,160,32,240,53.3C320,75,400,117,480,133.3C560,149,640,139,720,117.3C800,96,880,64,960,69.3C1040,75,1120,117,1200,117.3C1280,117,1360,75,1400,53.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <main>
+      <h2 id="segitiga">SEGITIGA</h2>
+      <div class="luas-segitiga">
+        <div class="bungkus">
+          <div class="info">
+            <img src="assets/luas-segitiga.png" alt="" />
+          </div>
+          <div class="form">
+            <form action="">
+              <h3>Luas Segitiga</h3>
+              <div class="inputBox">
+                <input type="number" id="alas-s" name="alas-s" required />
+                <span>Masukan Alas Segitiga</span>
+              </div>
+              <div class="inputBox">
+                <input type="number" id="tinggi-s" name="tinggi-s" required />
+                <span>Masukan Tinggi Segitiga</span>
+              </div>
+              <div class="inputBox">
+                <label>Hasil</label>
+                <input type="text" id="luas-s" name="luas-s" readonly />
+              </div>
+              <div class="button">
+                <button class="hasil" type="button" onclick="hitungLuasSegitiga()">Hasil</button>
+                <button class="reset" type="button" onclick="resetSegitiga()">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="keliling-segitiga">
+        <div class="bungkus">
+          <div class="info">
+            <img src="assets/keliling-segitiga.png" alt="" />
+          </div>
+          <div class="form">
+            <form action="">
+              <h3>Keliling Segitiga</h3>
+              <div class="inputBox">
+                <input type="number" id="sisiA" name="sisiA" required />
+                <span>Masukan Panjang Sisi A</span>
+              </div>
+              <div class="inputBox">
+                <input type="number" id="sisiB" name="sisiB" required />
+                <span>Masukan Panjang Sisi B</span>
+              </div>
+              <div class="inputBox">
+                <input type="number" id="sisiC" name="sisiC" required />
+                <span>Masukan Panjang Sisi C</span>
+              </div>
+              <div class="inputBox">
+                <label>Hasil</label>
+                <input type="text" id="keliling-s" name="keliling-s" readonly />
+              </div>
+              <div class="button">
+                <button class="hasil" type="button" onclick="hitungKelilingSegitiga()">Hasil</button>
+                <button class="reset" type="button" onclick="resetSegitiga()">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#115173"
+        fill-opacity="1"
+        d="M0,128L60,144C120,160,240,192,360,218.7C480,245,600,267,720,240C840,213,960,139,1080,122.7C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <footer>
+      <p>Created With Love by <a href="https://www.instagram.com/lv.317" target="_blank">Gilang Nur Rizki</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
